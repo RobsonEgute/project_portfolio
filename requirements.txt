@@ -1,0 +1,8 @@
+supabase=2.30.0
+pandas=3.0.2
+plotly=6.6.0
+numpy=2.4.4
+anthropic=0.109.2
+streamlit=1.5.80
+streamlit_cookies_manager=0.2.0
+bcrypt=5.0.0
