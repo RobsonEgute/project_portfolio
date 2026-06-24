@@ -31,7 +31,7 @@ st.markdown(
 
 # Cleaning the data by converting the columns to all lower case and replacing spaces with underscores
 
-df = pd.read_csv("datasets\Customer_support_data.csv.zip")
+df = pd.read_csv("datasets/Customer_support_data.csv.zip")
 
 df.columns = (df.columns.str.lower()
               .str.replace(r"[ -]", "_", regex=True)

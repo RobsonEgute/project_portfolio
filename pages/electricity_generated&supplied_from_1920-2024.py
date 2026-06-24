@@ -13,7 +13,7 @@ st.set_page_config(
 st.title("Electricity Generation & Supply in the UK (1920-2024)", text_alignment="center")
 
 # read the excel file and get the sheet names
-sheets = pd.read_excel("datasets\electricity_generation&supply_1920to2024_uk\Electricity_since_1920.xlsx", sheet_name=None)
+sheets = pd.read_excel("datasets/electricity_generation&supply_1920to2024_uk\Electricity_since_1920.xlsx", sheet_name=None)
 df_electricity_DandS = sheets.get("Generated and Supplied").copy()
 
 # Extract the sheet for the Estimated Historical Generation by soucre
