@@ -383,7 +383,12 @@ with st.expander("Data visualisation plots"):
 
     # convert the data into a pandas dataframe
     df = pd.DataFrame(user_data.data)
+    if df.empty:
+        st.info("No data found. Add an entry to get started.")
+        st.stop()
+
     df['date_time'] = pd.to_datetime(df['date_time'], format='mixed')
+    
     expenditure = [ "rent",
                     "electric_bills",
                     "gas_bills",
