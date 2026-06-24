@@ -214,7 +214,7 @@ def income_expenses(
                     "food": food,
                     "clothing": clothing,
                     "recreational_activities": recreational_activities,
-                    "date_time": date_time
+                    "date_time": date_time.isoformat()
                     }
                 ).execute()
     if saving_data:
@@ -388,7 +388,7 @@ with st.expander("Data visualisation plots"):
         st.stop()
 
     df['date_time'] = pd.to_datetime(df['date_time'], format='mixed')
-    
+
     expenditure = [ "rent",
                     "electric_bills",
                     "gas_bills",
